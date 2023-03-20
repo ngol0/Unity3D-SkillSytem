@@ -4,14 +4,25 @@ using UnityEngine;
 
 public class AnimListener : MonoBehaviour
 {
-    System.Action action;
-    public void SetAction(System.Action OnNextMove)
+    System.Action onAttack;
+    System.Action onDoneAnim;
+    public void SetAttackEffect(System.Action attackEffect)
     {
-        action = OnNextMove;
+        onAttack = attackEffect;
+    }
+
+    public void SetOnDoneAnimAction(System.Action onDone)
+    {
+        onDoneAnim = onDone;
     }
     
     public void OnJumpSlash()
     {
-        action();
+        onAttack?.Invoke();
+    }
+
+    public void OnDoneAnim()
+    {
+        onDoneAnim?.Invoke();
     }
 }

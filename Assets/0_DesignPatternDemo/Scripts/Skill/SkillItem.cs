@@ -41,8 +41,6 @@ public class SkillItem : ScriptableObject
         if (!mana.UseMana(manaCost)) return;
         cooldown.StartCoolingDown(this, cooldownTime);
 
-        data.user.GetComponent<PlayerController>().enabled = false;
-
         //filter target
         foreach (var filter in filterList)
         {
@@ -51,24 +49,14 @@ public class SkillItem : ScriptableObject
         
         //apply effect
         //todo: when applying effect, prevent other actions from starting
-        // foreach (var effect in effectList)
-        // {
-        //     effect.ApplyEffect(data, () => OnDoneEffect(effect.name));
-        // }
-        for (int i = 0; i < effectList.Count(); i++)
+        foreach (var effect in effectList)
         {
-            if (i == effectList.Count() - 1) 
-            {
-                effectList[i].ApplyEffect(data, () => OnDoneEffect());
-                return;
-            }
-            else { effectList[i].ApplyEffect(data); }
-
+            effect.ApplyEffect(data, () => OnDoneEffect(effect.name));
         }
     }
 
-    private void OnDoneEffect()
+    private void OnDoneEffect(string name = "")
     {
-        data.user.GetComponent<PlayerController>().enabled = true;
+        
     }
 }
