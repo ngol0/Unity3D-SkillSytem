@@ -15,6 +15,11 @@ public class SkillData : IAction
         this.user = user;
     }
 
+    public Animator GetUserAnim()
+    {
+        return user.GetComponent<PlayerController>().Anim;
+    }
+
     public void Cancel()
     {
         isCanceled = true;

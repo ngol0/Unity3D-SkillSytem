@@ -10,8 +10,9 @@ public class AnimEffect : IEffect
     [SerializeField] string triggerAnimaName;
     public override void ApplyEffect(SkillData data, Action OnComplete)
     {
-        anim = data.user.GetComponent<PlayerController>().Anim;
+        anim = data.GetUserAnim();
         anim.SetTrigger(triggerAnimaName);
+        
         OnComplete?.Invoke();
     }
 }

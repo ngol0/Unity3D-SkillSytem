@@ -13,7 +13,7 @@ public class DisableActionOnAnim : IEffect
         data.user.GetComponent<PlayerController>().enabled = false;
         effectToDecorate.ApplyEffect(data);
         
-        anim = data.user.GetComponent<PlayerController>().Anim;
+        anim = data.GetUserAnim();
         anim.GetComponent<AnimListener>().SetOnDoneAnimAction
             (() => EnablePlayerController(data, OnComplete));
     }

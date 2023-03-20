@@ -11,7 +11,7 @@ public class TriggerActionAnimEffect : IEffect
 
     public override void ApplyEffect(SkillData data, Action OnComplete)
     {
-        anim = data.user.GetComponent<PlayerController>().Anim;
+        anim = data.GetUserAnim();
         anim.GetComponent<AnimListener>().SetAttackEffect(() => TriggerEffect(data, OnComplete));
     }
 
