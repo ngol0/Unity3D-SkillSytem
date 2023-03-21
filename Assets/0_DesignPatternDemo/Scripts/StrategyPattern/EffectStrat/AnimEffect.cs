@@ -7,12 +7,12 @@ using UnityEngine;
 public class AnimEffect : IEffect
 {
     Animator anim;
-    [SerializeField] string triggerAnimaName;
+    [SerializeField] public string triggerAnimaName;
     public override void ApplyEffect(SkillData data, Action OnComplete)
     {
         anim = data.GetUserAnim();
         anim.SetTrigger(triggerAnimaName);
-        
+
         OnComplete?.Invoke();
     }
 }
