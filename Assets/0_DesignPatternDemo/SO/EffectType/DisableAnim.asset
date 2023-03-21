@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8785c368fc9354229ab7224c6d239967, type: 3}
   m_Name: DisableAnim
   m_EditorClassIdentifier: 
-  effect: {fileID: 0}
+  animToStop: 
+  effect: {fileID: 11400000, guid: ed9f3a60a9225084ba2ed317cdb8a84f, type: 2}

@@ -10,6 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: acdb07fb33d2c474a8b685851620f87f, type: 3}
-  m_Name: DisableActionOnAnim
+  m_Name: DisableActionOnAttack
   m_EditorClassIdentifier: 
-  effectToDecorate: {fileID: 0}
+  stopAnim: stopAttack
+  effectToDecorate: {fileID: 11400000, guid: ed9f3a60a9225084ba2ed317cdb8a84f, type: 2}

@@ -6,6 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "DisableAnim", menuName = "Skill/Effect/DisableAnim")]
 public class DisableAnim : IEffect
 {
+    [SerializeField] string animToStop;
     public IEffect effect;
     Animator anim;
     public override void ApplyEffect(SkillData data, Action OnComplete = null)
@@ -23,7 +24,7 @@ public class DisableAnim : IEffect
             if (data.IsCanceled)
             {
                 anim.ResetTrigger(animToDisable.triggerAnimaName);
-                anim.SetTrigger("stopAttack");
+                anim.SetTrigger(animToStop);
 
                 yield break;
             }
