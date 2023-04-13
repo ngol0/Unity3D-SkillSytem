@@ -102886,7 +102886,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 1.5
-    functionName: OnJumpSlash
+    functionName: OnAttack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

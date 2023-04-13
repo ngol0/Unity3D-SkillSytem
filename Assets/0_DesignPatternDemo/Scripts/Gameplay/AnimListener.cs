@@ -16,7 +16,7 @@ public class AnimListener : MonoBehaviour
         onDoneAnim = onDone;
     }
     
-    public void OnJumpSlash()
+    public void OnAttack()
     {
         onAttack?.Invoke();
     }

@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff6a72f886ed80f4fb9ed9dc29eb6442, type: 3}
-  m_Name: ListSkillItem
+  m_Script: {fileID: 11500000, guid: d229584ae0538084aa51c324635635aa, type: 3}
+  m_Name: StrongSlashAnim
   m_EditorClassIdentifier: 
-  skillList:
-  - {fileID: 11400000, guid: 12d774388b94c8e4bbfea947eddbd60f, type: 2}
-  - {fileID: 11400000, guid: 040e1870a97eae542b1149620666157e, type: 2}
+  triggerAnimaName: strongSlash

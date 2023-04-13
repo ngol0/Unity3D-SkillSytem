@@ -9,7 +9,7 @@ public class DelayedClickTarget : ITarget
     [SerializeField] private Texture2D cursorTexture;
     [SerializeField] private Vector2 cursorHotspot;
     [SerializeField] LayerMask enemyLayerMask;
-    [SerializeField] float areaOfAffect;
+    [SerializeField] float areaAffectRadius;
     [SerializeField] GameObject summonCircle;
     
     GameObject summonCircleObj;
@@ -34,7 +34,7 @@ public class DelayedClickTarget : ITarget
             { summonCircleObj = Instantiate(summonCircle, hitpoint, Quaternion.identity); }
             else { summonCircleObj.SetActive(true); }
 
-            summonCircleObj.transform.localScale = new Vector3(areaOfAffect*2, 1, areaOfAffect*2);
+            summonCircleObj.transform.localScale = new Vector3(areaAffectRadius*2, 1, areaAffectRadius*2);
             
             if (hitpoint.y != -1)
             {
@@ -66,7 +66,7 @@ public class DelayedClickTarget : ITarget
     {
         // //Input.MousePosition() is the 2d position on the screen.  
         // //In order to know where that actually is in the scene, we need to use the Raycast and hit.point.
-        RaycastHit[] targets = Physics.SphereCastAll(point, areaOfAffect, Vector3.up, 0, enemyLayerMask);
+        RaycastHit[] targets = Physics.SphereCastAll(point, areaAffectRadius, Vector3.up, 0, enemyLayerMask);
         foreach (var target in targets)
         {
             yield return target.collider.gameObject;

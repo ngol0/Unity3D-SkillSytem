@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9380682d59f2b194787fb379ebcb8f5c, type: 3}
+  m_Name: Skill01
+  m_EditorClassIdentifier: 
+  id: 1
+  displayName: 
+  description: 
+  targetingStratergy: {fileID: 11400000, guid: ffd9f8d359ee14941979e107c33be456, type: 2}
+  filterList: []
+  effectList:
+  - {fileID: 11400000, guid: d4dcfcf86ddf8f347ac1ee1a36dadcf6, type: 2}
+  - {fileID: 11400000, guid: 808f1bb5af2963d42906f0a135f5fd44, type: 2}
+  - {fileID: 11400000, guid: 5266db3f7afa08248baa69c291f4ca01, type: 2}
+  cooldownTime: 0
+  manaCost: 0

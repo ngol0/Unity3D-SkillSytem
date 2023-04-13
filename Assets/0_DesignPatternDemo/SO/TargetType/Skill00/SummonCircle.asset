@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b8de8916cde84658bff206d4cbdd94a, type: 3}
-  m_Name: Delayed Click Target
+  m_Name: SummonCircle
   m_EditorClassIdentifier: 
   cursorTexture: {fileID: 2800000, guid: 7f16dd09003230f419f0222d74f2ff9c, type: 3}
   cursorHotspot: {x: 0, y: 0}
   enemyLayerMask:
     serializedVersion: 2
     m_Bits: 512
-  areaOfAffect: 4
+  areaAffectRadius: 4
   summonCircle: {fileID: 3487424551685265418, guid: a8f621b8655a3eb4e8de9a8bc7fd928e,
     type: 3}
