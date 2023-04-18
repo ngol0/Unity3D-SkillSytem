@@ -19,7 +19,7 @@ public class SkillItem : ScriptableObject
     Mana mana;
     SkillManager cooldown;
 
-    public void Use(GameObject user)
+    public void Use(GameObject user, Vector3 instantPoint)
     {
         data = new SkillData(user);
         mana = user.GetComponent<Mana>();
@@ -32,6 +32,7 @@ public class SkillItem : ScriptableObject
         cooldown = user.GetComponent<SkillManager>();
         if (!cooldown || cooldown.GetCoolDownTime(this) > 0) return;
 
+        data.instantPoint = instantPoint;
         targetingStratergy.StartTarget(data, ProcessTargets);
     }
 

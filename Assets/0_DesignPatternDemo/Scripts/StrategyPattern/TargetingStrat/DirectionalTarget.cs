@@ -10,11 +10,7 @@ public class DirectionalTarget : ITarget
     [SerializeField] private Vector2 cursorHotspot;
     public override void StartTarget(SkillData data, Action OnComplete)
     {
-        var hitpoint = WorldPosition.GetWorldPosOnGround();
-        if (hitpoint.y != 1)
-        {
-            data.targetedPoint = hitpoint;
-        }
+        data.targetedPoint = data.instantPoint;
         OnComplete?.Invoke();
     }
 }

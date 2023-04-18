@@ -15,11 +15,11 @@ MonoBehaviour:
   id: 1
   displayName: 
   description: 
-  targetingStratergy: {fileID: 11400000, guid: ffd9f8d359ee14941979e107c33be456, type: 2}
+  targetingStratergy: {fileID: 11400000, guid: 8764ca45b2eadca4cacd99b8239fb18f, type: 2}
   filterList: []
   effectList:
   - {fileID: 11400000, guid: d4dcfcf86ddf8f347ac1ee1a36dadcf6, type: 2}
   - {fileID: 11400000, guid: 808f1bb5af2963d42906f0a135f5fd44, type: 2}
   - {fileID: 11400000, guid: 5266db3f7afa08248baa69c291f4ca01, type: 2}
-  cooldownTime: 0
-  manaCost: 0
+  cooldownTime: 3
+  manaCost: 10

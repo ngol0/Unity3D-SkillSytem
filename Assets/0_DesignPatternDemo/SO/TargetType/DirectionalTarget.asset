@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c50037450b189674ab92867d9b7126be, type: 3}
   m_Name: DirectionalTarget
   m_EditorClassIdentifier: 
-  cursorTexture: {fileID: 0}
+  cursorTexture: {fileID: 2800000, guid: 7f16dd09003230f419f0222d74f2ff9c, type: 3}
   cursorHotspot: {x: 0, y: 0}

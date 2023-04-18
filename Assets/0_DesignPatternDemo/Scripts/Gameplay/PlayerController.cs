@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] CursorMapping[] cursorMappings = null;
 
     SkillItem curSkill;
+    Vector3 curPoint;
 
     private void Start() 
     {
@@ -54,6 +55,7 @@ public class PlayerController : MonoBehaviour
         RaycastHit hitData;
         if (Physics.Raycast(ray, out hitData, float.MaxValue, enemyMask))
         {
+            curPoint = hitData.point;
             if (hitData.transform.GetComponent<EnemyTarget>().HandleRaycast(this))
             {
                 SetCursor(CursorType.Combat);
@@ -70,8 +72,9 @@ public class PlayerController : MonoBehaviour
         RaycastHit hitData;
         if (Physics.Raycast(ray, out hitData, float.MaxValue, layerMask))
         {
+            curPoint = hitData.point;
             //Debug.Log(hitData);
-            if (Input.GetMouseButtonDown(0)) { playerMove.StartMoveAction(hitData.point); }
+            if (Input.GetMouseButtonDown(0)) { playerMove.StartMoveAction(curPoint); }
             SetCursor(CursorType.Movement);
             return true;
         }
@@ -103,7 +106,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Alpha1 + i))
             {
                 curSkill = skillListSO.skillList[i];
-                curSkill.Use(this.gameObject);
+                curSkill.Use(this.gameObject, curPoint);
 
                 //todo: trigger ui
 
