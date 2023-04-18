@@ -10,7 +10,7 @@ public class BlastEffect : IEffect
 
     public override void ApplyEffect(SkillData data, Action OnComplete)
     {
-        var effect = Instantiate(effectPrefab, data.clickPoint, Quaternion.identity);
+        var effect = Instantiate(effectPrefab, data.targetedPoint, Quaternion.identity);
         if (OnComplete!= null) effect.GetComponent<StopParticleSystem>().SetAction(OnComplete);
     }
 }

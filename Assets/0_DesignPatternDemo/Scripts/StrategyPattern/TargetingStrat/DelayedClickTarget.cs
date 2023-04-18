@@ -49,13 +49,18 @@ public class DelayedClickTarget : ITarget
 
                     //when release mouse btn > get all targets
                     data.targets = GetTargetsInRadius(hitpoint);
-                    data.clickPoint = hitpoint;
+                    data.targetedPoint = hitpoint;
 
                     break;
                 }
-                
-                yield return null;
+
+                //cancelling ability when right clicked
+                if (Input.GetMouseButtonDown(1))
+                {
+                    data.user.GetComponent<ActionManager>().CancelAction(data);
+                }
             }
+            yield return null;
         }
         unit.enabled = true;
         summonCircleObj.SetActive(false);

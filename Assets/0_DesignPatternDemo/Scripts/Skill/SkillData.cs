@@ -6,7 +6,7 @@ public class SkillData : IAction
 {
     public GameObject user;
     public IEnumerable<GameObject> targets;
-    public Vector3 clickPoint;
+    public Vector3 targetedPoint;
     private bool isCanceled = false;
     public bool IsCanceled => isCanceled;
 

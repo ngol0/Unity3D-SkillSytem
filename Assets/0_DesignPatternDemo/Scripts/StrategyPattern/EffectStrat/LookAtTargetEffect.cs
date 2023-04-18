@@ -8,7 +8,7 @@ public class LookAtTargetEffect : IEffect
 {
     public override void ApplyEffect(SkillData data, Action OnComplete)
     {
-        data.user.transform.LookAt(data.clickPoint);
+        data.user.transform.LookAt(data.targetedPoint);
 
         OnComplete?.Invoke();
     }

@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] CursorMapping[] cursorMappings = null;
 
+    SkillItem curSkill;
+
     private void Start() 
     {
         skillListSO = skillManager.skillSO;
@@ -100,8 +102,8 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Alpha1 + i))
             {
-                //use skill
-                skillListSO.skillList[i].Use(this.gameObject);
+                curSkill = skillListSO.skillList[i];
+                curSkill.Use(this.gameObject);
 
                 //todo: trigger ui
 
