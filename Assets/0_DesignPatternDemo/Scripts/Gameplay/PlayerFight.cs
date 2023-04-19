@@ -8,7 +8,7 @@ public class PlayerFight : MonoBehaviour, IAction
     private PlayerMove movementControl;
     private GameObject targetToAttack;
     private Animator animator;
-    private float inRangeDistance = 1f;
+    private float inRangeDistance = 2f;
     private void Start() 
     {
         actionScheduler = GetComponent<ActionManager>();
@@ -42,6 +42,7 @@ public class PlayerFight : MonoBehaviour, IAction
 
     public void Attack(GameObject target)
     {
+        Cancel();
         targetToAttack = target;
         actionScheduler.StartAction(this);
     }

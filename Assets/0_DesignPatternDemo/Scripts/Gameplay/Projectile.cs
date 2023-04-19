@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    [SerializeField] GameObject hitEffectVfx;
     Vector3 targetedPoint;
     GameObject user;
     float speed = 7f;
@@ -24,6 +25,11 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
+        if (hitEffectVfx)
+        {
+            Instantiate(hitEffectVfx, transform.position, Quaternion.identity);
+        }
         Destroy(gameObject);
+        Debug.Log(user.name + "has attacked " + other.name);
     }
 }
