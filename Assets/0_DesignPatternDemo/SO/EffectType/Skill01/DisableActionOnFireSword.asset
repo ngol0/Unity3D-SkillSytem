@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acdb07fb33d2c474a8b685851620f87f, type: 3}
   m_Name: DisableActionOnFireSword
   m_EditorClassIdentifier: 
-  stopAnim: stopAttack
+  stopAnim: stopSkill
   effectToDecorate: {fileID: 11400000, guid: 3f3c935afe7bf624b93a799224c43636, type: 2}

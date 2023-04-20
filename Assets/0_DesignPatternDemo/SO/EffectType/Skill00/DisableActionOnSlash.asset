@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acdb07fb33d2c474a8b685851620f87f, type: 3}
   m_Name: DisableActionOnSlash
   m_EditorClassIdentifier: 
-  stopAnim: stopAttack
+  stopAnim: stopSkill
   effectToDecorate: {fileID: 11400000, guid: ed9f3a60a9225084ba2ed317cdb8a84f, type: 2}
