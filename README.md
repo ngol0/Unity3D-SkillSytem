@@ -14,8 +14,9 @@ A 3D demo that implements strategy, decorator and composite design pattern to cr
 ***The demo****
 I made two skills and basic movement/fighting behaviors. There are 2 skills and in order to use the skill, press 1 or 2.
 
-The first skill is a jump slash. It looks like this:
+1. The first skill is a jump slash with a delayed click targeting:
 <p align="center">
   <img src="https://github.com/ngol0/unity3D-designPatterns/blob/main/skill1.gif" width="900" title="hover text">
 </p>
 
+2. 
