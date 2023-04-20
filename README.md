@@ -23,3 +23,6 @@ The skills I created in this demo project:
 </p>
 
 <b>2. Skill 01:</b> a fire sword slash with a directional targeting. This targeting prompts the fireball to shoot toward where your cursor is the moment you press 2 to apply the skill.
+<p align="center">
+  <img src="https://github.com/ngol0/unity3D-designPatterns/blob/main/skill2.gif" width="900" title="hover text">
+</p>
