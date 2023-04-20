@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
 
     SkillItem curSkill;
     Vector3 curPoint;
+    public Vector3 CurPoint => curPoint;
 
     private void Start() 
     {
@@ -106,7 +107,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Alpha1 + i))
             {
                 curSkill = skillListSO.skillList[i];
-                curSkill.Use(this.gameObject, curPoint);
+                curSkill.Use(this.gameObject);
 
                 //todo: trigger ui
 

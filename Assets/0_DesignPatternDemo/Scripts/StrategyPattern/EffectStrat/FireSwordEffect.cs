@@ -12,7 +12,7 @@ public class FireSwordEffect : IEffect
     {
         Vector3 firePos = data.user.transform.position;
         var fire = Instantiate(fireVFX, firePos, Quaternion.identity);
-        fire.GetComponent<Projectile>().SetTarget(data.instantPoint, data.user);
+        fire.GetComponent<Projectile>().SetTarget(data.targetedPoint, data.user);
         //if (OnComplete!= null) fire.GetComponent<StopParticleSystem>().SetAction(OnComplete);
     }
 }

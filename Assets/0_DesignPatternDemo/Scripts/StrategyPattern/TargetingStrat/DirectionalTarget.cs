@@ -10,7 +10,7 @@ public class DirectionalTarget : ITarget
     [SerializeField] private Vector2 cursorHotspot;
     public override void StartTarget(SkillData data, Action OnComplete)
     {
-        data.targetedPoint = data.instantPoint;
+        data.targetedPoint = data.user.GetComponent<PlayerController>().CurPoint;
         OnComplete?.Invoke();
     }
 }
