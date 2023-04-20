@@ -13,7 +13,7 @@ A 3D demo that implements strategy, decorator and composite design pattern to cr
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ***THE DEMO***
 
-Currently the demo code in this project consist of 2 concrete skills and basic movement/fighting behaviors with corresonponding cursor types. This project is designed so that it is easier to add more skills with different targeting/filtering/effecting techniques. In addition, it is also easy to extend the functionality or add more behaviors to the skills through decorator and composite pattern.
+Currently the demo code in this project consists of 2 concrete skills and basic movement/fighting behaviors with corresonponding cursor types. This project is designed so that it is easier to add more skills with different targeting/filtering/effecting techniques. In addition, it is also easy to extend the functionality or add more behaviors to the skills through decorator and composite pattern.
 
 The skills I created in this demo project:
 
