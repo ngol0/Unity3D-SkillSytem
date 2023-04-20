@@ -17,9 +17,9 @@ Currently the demo code in this project consist of 2 concrete skills and basic m
 
 The skills I created in this demo project:
 
-<b>1. Skill 00: </b> a jump slash with a delayed click targeting. Press 1 to use this skill.
+<b>1. Skill 00: </b> a jump slash with a delayed click targeting. This targeting allows you to determine a circled area of targeting before clicking to apply your skill. Press 1 to use this skill.
 <p align="center">
   <img src="https://github.com/ngol0/unity3D-designPatterns/blob/main/skill1.gif" width="900" title="hover text">
 </p>
 
-<b>2. Skill 01:</b> a fire sword slash with a directional targeting (that is, the fireball will shoot toward where your cursor is the moment you apply the skill). Press 2 to apply this skill.
+<b>2. Skill 01:</b> a fire sword slash with a directional targeting. This targeting prompts the fireball to shoot toward where your cursor is the moment you press 2 to apply the skill.
