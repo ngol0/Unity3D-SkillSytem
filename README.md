@@ -1,4 +1,4 @@
-# unity3D-designPatterns
+# Skill system using design patterns
 A 3D demo that implements strategy, decorator and composite design pattern to create a skill system for an RPG type
 
 <b>1. Strategy Pattern:</b> This pattern is used to create different targeting, effect and filtering techniques for different skills.
