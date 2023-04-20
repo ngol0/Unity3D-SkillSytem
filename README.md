@@ -10,4 +10,12 @@ A 3D demo that implements strategy, decorator and composite design pattern to cr
 <b>3. Composite Pattern:</b> This pattern is used as a complex container for the effects. The composite effects include:
   - Sequence: allows each effect in an array of effects to be called after the previous effect is finished
   - Action after anim: allows an array of effects to be called after an event in animation is called
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+***The demo****
+I made two skills and basic movement/fighting behaviors. There are 2 skills and in order to use the skill, press 1 or 2.
+
+The first skill is a jump slash. It looks like this:
+<p align="center">
+  <img src="https://github.com/ngol0/unity3D-designPatterns/blob/main/skill1.png" width="900" title="hover text">
+</p>
 
