@@ -32,6 +32,8 @@ public class PlayerFight : MonoBehaviour, IAction
 
     private void TriggerAttackBehavior()
     {
+        transform.LookAt(targetToAttack.transform);
+        animator.ResetTrigger("stopAttack");
         animator.SetTrigger("startAttack");
     }
 

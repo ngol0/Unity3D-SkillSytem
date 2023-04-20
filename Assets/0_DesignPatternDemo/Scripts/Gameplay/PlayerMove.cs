@@ -33,14 +33,14 @@ public class PlayerMove : MonoBehaviour, IAction
     public void MoveTo(Vector3 targetPosition)
     {
         navMesh.destination = targetPosition;
-        navMesh.speed = moveSpeed;
+        //navMesh.speed = moveSpeed;
         navMesh.isStopped = false;
     }
 
     private void UpdateMovementAnim()
     {
-        velocity = navMesh.velocity;
-        localVelocity = transform.InverseTransformDirection(velocity); //the velocity of the player (z axis)
+        velocity = navMesh.velocity; //global velocity
+        localVelocity = transform.InverseTransformDirection(velocity); //local velocity of the player
         unitAnimator.SetFloat("speed", localVelocity.z);
     }
 

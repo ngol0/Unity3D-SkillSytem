@@ -26,11 +26,11 @@ public class SkillItem : ScriptableObject
 
         if (manaCost > mana.CurMana) return;
 
-        ActionManager actionManager = user.GetComponent<ActionManager>();
-        actionManager.StartAction(data);
-
         cooldown = user.GetComponent<SkillManager>();
         if (!cooldown || cooldown.GetCoolDownTime(this) > 0) return;
+        
+        ActionManager actionManager = user.GetComponent<ActionManager>();
+        actionManager.StartAction(data);
 
         targetingStratergy.StartTarget(data, ProcessTargets);
     }

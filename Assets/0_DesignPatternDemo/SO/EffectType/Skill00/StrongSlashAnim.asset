@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d229584ae0538084aa51c324635635aa, type: 3}
   m_Name: StrongSlashAnim
   m_EditorClassIdentifier: 
-  triggerAnimaName: strongSlash
+  triggerAnimaName: skill1
