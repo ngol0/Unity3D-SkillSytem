@@ -16,6 +16,6 @@ I made two skills and basic movement/fighting behaviors. There are 2 skills and 
 
 The first skill is a jump slash. It looks like this:
 <p align="center">
-  <img src="https://github.com/ngol0/unity3D-designPatterns/blob/main/skill1.png" width="900" title="hover text">
+  <img src="https://github.com/ngol0/unity3D-designPatterns/blob/main/skill1.gif" width="900" title="hover text">
 </p>
 
