@@ -1,4 +1,5 @@
 # Skill system using design patterns
+## Overview
 A 3D demo that implements strategy, decorator and composite design pattern to create a skill system for an RPG type
 
 This project is designed so that it is easier to add more skills with different targeting/filtering/effecting techniques. In addition, it is also easy to extend the functionality or add more behaviors to the skills through decorator and composite pattern.
