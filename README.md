@@ -8,9 +8,9 @@ This project is designed so that it is easier to add more skills with different 
 <img src="https://github.com/ngol0/unity3D-designPatterns/blob/main/skill1.gif" width="900" title="skill 1 demo">
 
 <b>2. Skill 01:</b> a fire sword slash with a directional targeting. This targeting prompts the fireball to shoot toward where your cursor is the moment you press 2 to apply the skill.
-<p align="center">
-  <img src="https://github.com/ngol0/unity3D-designPatterns/blob/main/skill2.gif" width="900" title="skill 2 demo">
-</p>
+
+<img src="https://github.com/ngol0/unity3D-designPatterns/blob/main/skill2.gif" width="900" title="skill 2 demo">
+
 
 ---
 
