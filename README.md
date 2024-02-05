@@ -1,7 +1,6 @@
 # Skill system using design patterns
 A 3D demo that implements strategy, decorator and composite design pattern to create a skill system for an RPG type
 
-This demo consists of 2 concrete skills and basic movement/fighting behaviors with corresonponding cursor types. 
 This project is designed so that it is easier to add more skills with different targeting/filtering/effecting techniques. In addition, it is also easy to extend the functionality or add more behaviors to the skills through decorator and composite pattern.
 
 <b>1. Skill 00: </b> a jump slash with a delayed click targeting. This targeting allows you to determine a circled area of targeting before clicking to apply your skill. Press 1 to use this skill.
