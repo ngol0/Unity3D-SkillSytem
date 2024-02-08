@@ -1,4 +1,4 @@
-# Skill system using design patterns
+# Skill system using Design Patterns
 ## Overview
 A 3D demo that implements strategy, decorator and composite design pattern to create a skill system for an RPG type
 
