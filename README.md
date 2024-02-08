@@ -24,6 +24,6 @@ This project is designed so that it is easier to add more skills with different 
 
 <b>3. Composite Pattern:</b> This pattern is used as a complex container for the effects. The composite effects include:
   - Sequence: allows each effect in an array of effects to be called after the previous effect is finished
-  - Action after anim: allows an array of effects to be called after an event in animation is called
+  - Action after animation: allows an array of effects to be called after an event in animation is called
 
 
