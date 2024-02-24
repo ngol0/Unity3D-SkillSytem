@@ -8,7 +8,6 @@ public class PlayerMove : MonoBehaviour, IAction
     ActionManager actionScheduler;
     Animator unitAnimator;
     NavMeshAgent navMesh;
-    float moveSpeed = 10f;
     Vector3 velocity;
     Vector3 localVelocity;
 
