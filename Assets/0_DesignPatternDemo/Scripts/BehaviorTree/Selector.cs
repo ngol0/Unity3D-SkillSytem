@@ -2,17 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Selector : MonoBehaviour
+public class Selector : Node
 {
-    // Start is called before the first frame update
-    void Start()
+    public Selector()
     {
-        
+        name = "Selector default";
     }
 
-    // Update is called once per frame
-    void Update()
+    public Selector(string n)
     {
-        
+        name = n;
+    }
+
+    public override Status Process()
+    {
+        Status childStatus = children[currentChildrenNode].Process();
+        if (childStatus == Status.FAILURE)
+        {
+            currentChildrenNode++;
+            if (currentChildrenNode >= children.Count)
+            {
+                return Status.FAILURE;
+            }
+        }
+        else if (childStatus == Status.SUCCESS)
+        {
+            currentChildrenNode = 0;
+            return childStatus;
+        }
+        return Status.RUNNING;
     }
 }

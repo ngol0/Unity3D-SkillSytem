@@ -17,15 +17,18 @@ public class Sequence : Node
     public override Status Process()
     {
         Status childStatus = children[currentChildrenNode].Process();
-        if (childStatus == Status.RUNNING || childStatus == Status.FAILURE)
+        if (childStatus == Status.FAILURE)
         {
             return childStatus;
         }
-        currentChildrenNode++;
-        if (currentChildrenNode >= children.Count)
+        else if (childStatus == Status.SUCCESS)
         {
-            currentChildrenNode = 0;
-            return Status.SUCCESS;
+            currentChildrenNode++;
+            if (currentChildrenNode >= children.Count)
+            {
+                currentChildrenNode = 0;
+                return Status.SUCCESS;
+            }
         }
         return Status.RUNNING;
     }
