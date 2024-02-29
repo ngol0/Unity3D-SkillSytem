@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6571198419441675104}
   - component: {fileID: 23413120316029122}
   - component: {fileID: 2869603361552188098}
-  - component: {fileID: 1893427640}
   - component: {fileID: 1893427645}
   m_Layer: 9
   m_Name: RobotWithGun
@@ -92,21 +91,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1893427640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6871658731845866561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bea7aa973bdfc9b42ba98189bfe3c9d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obj1: {fileID: 0}
-  obj2: {fileID: 0}
-  otherEnemy: {fileID: 0}
 --- !u!195 &1893427645
 NavMeshAgent:
   m_ObjectHideFlags: 0
